@@ -85,6 +85,14 @@ img {
   overflow: hidden;
 }
 
+.section-title {
+  font-family: "Playfair-Display", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  color: "#07484A";
+}
+
 /* CONTAINER */
 .container {
   max-width: 1620px;
