@@ -91,6 +91,7 @@ img {
   font-size: 64px;
   line-height: 85px;
   color: #07484A;
+  text-align: center;
 }
 
 /* CONTAINER */
@@ -109,6 +110,10 @@ img {
   background-size: cover contain;
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+.suu {
+  margin-top: 220px;
 }
 
 .header {
