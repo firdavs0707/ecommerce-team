@@ -1,0 +1,280 @@
+.main-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/img/hero.jpg");
+  background-size: cover contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.header > nav > ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  list-style: none;
+}
+
+.header > nav > ul > li > a {
+  text-decoration: none;
+  color: $mainbg;
+  cursor: pointer;
+  padding-bottom: 4px;
+}
+.header > nav > ul > li:hover {
+  color: $mainbg;
+  box-shadow: 0px 3px;
+  cursor: pointer;
+}
+
+.icons {
+  width: 196px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons > div:hover {
+  cursor: pointer;
+}
+
+.hero-title {
+  margin-top: 225px;
+  max-width: 668px;
+  color: $maingreen;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+}
+
+.hero-info {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: $maingreen;
+}
+
+.hero-btn {
+  padding: 20px;
+  gap: 4px;
+  width: 230px;
+  height: 80px;
+  color: $mainbg;
+  background: $btnlightgreen;
+  border-radius: 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  border: none;
+  margin-top: 55px;
+}
+
+.gamburger2 {
+  display: none;
+}
+
+.gamburger {
+  display: none;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.login {
+  padding: 20px;
+  width: 956px;
+  height: 600px;
+}
+
+.login::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.subimg {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 70px;
+}
+
+.login > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login > div > h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+.bt {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  max-width: 855px;
+  width: 100%;
+  height: 115px;
+  background: #70908B;
+border-radius: 30px;
+color: $mainbg;
+}
+
+.in {
+  width: 855px;
+  height: 115px;
+  padding-left: 80px;
+  font-size: 40px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.login > div > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.login > div > button > img {
+  width: 30px;
+  height: 30px;
+}
+
+.navig {
+  list-style-type: none;
+  width: 320px;
+}
+
+.item-nav {
+  width: 174px;
+  height: 82px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 82px;
+  color: #000000;
+}
+
+.item-nav > a {
+  text-decoration: none;
+  color: $maingreen;
+}
+.navig2 {
+  list-style-type: none;
+}
+
+.df {
+  display: flex;
+  align-items: flex-end;
+  height: 50%;
+}
+
+.item-nav2 {
+  width: 115px;
+  height: 27px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.item-nav2 > a {
+  text-decoration: none;
+  color: $maingreen;
+}
+.navig3 {
+  list-style-type: none;
+}
+
+.item-nav3 {
+  font-size: 20px;
+}
+
+.item-nav3 > a {
+  text-decoration: none;
+  color: $maingreen;
+}
+
+.close {
+  background-color: transparent;
+  border: 2px solid transparent;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.close > img {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: "955px") {
+  .header > nav > ul {
+    display: none;
+  }
+
+  .gamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: "650px") {
+  .navig2 {
+    display: none;
+  }
+  .navig3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: "490px") {
+  .header > nav > ul {
+    display: none;
+  }
+
+  .gamburger {
+    display: none;
+  }
+
+  .gamburger2 {
+    display: block;
+  }
+
+  .icons {
+    width: 100px;
+  }
+}
