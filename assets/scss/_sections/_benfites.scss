@@ -1,3 +1,100 @@
-.benfites-row{
-      display: flex !important;
+.benfites {
+      background: $benefitsbg;
+      width: 100%;
+}
+
+.benfites-row {
+      h2 {
+            text-align: center;
+            margin: 100px 0;
+      }
+}
+
+.benefits-information {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1348px;
+      flex-wrap: wrap;
+      margin: 100px auto;
+
+
+      .benfites-card {
+            height: 306px;
+            max-width: 310px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .benfites-card__img {
+                  width: 108px;
+                  margin: 10px 0;
+            }
+
+            .benfites-card__name {
+                  font-size: 36px;
+                  line-height: 48px;
+                  color: $maingreen;
+                  font-weight: 700;
+                  font-family: "Playfair-Display", sans-serif;
+                  text-align: center;
+                  margin-top: 22px;
+            }
+
+            .benfites-card__text {
+                  font-size: 24px;
+                  line-height: 33px;
+                  text-align: center;
+                  color: $maingreen;
+                  margin-top: 32px;
+            }
+
+      }
+}
+
+@media only screen and (max-width: 1024px) {
+      .benfites-row {
+            h2 {
+                  font-size: 48px;
+            }
+      }
+
+      .benefits-information {
+            .benfites-card {
+                  .benfites-card__name {
+                        font-size: 24px;
+                  }
+
+                  .benfites-card__text {
+                        font-size: 18px;
+                  }
+            }
+      }
+}
+
+@media only screen and (max-width: 740px) {
+      .benefits-information {
+            flex-direction: column;
+            justify-content: center;
+
+            .benfites-card {
+                  margin: auto;
+            }
+
+            .benfites-card:nth-child(2){
+                  margin: 60px auto;
+            }
+      }
+}
+
+@media only screen and (max-width: 401px) {
+      .benfites-row {
+            h2 {
+                  font-size: 28px;
+                  line-height: 42px;
+                  margin: 80px 16px;
+            }
+      }
+      .benefits-information{
+            margin: 120px auto 80px auto;
+      }
 }
