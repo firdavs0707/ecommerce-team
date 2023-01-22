@@ -102,6 +102,39 @@ img {
   padding-left: 20px;
 }
 
+.popular-prodcuts {
+  position: relative;
+  background: url("../img/popular-bg.jpg") no-repeat;
+  background-position: calc(50% - 945px) calc(50% + 60px);
+}
+
+.popular-btn {
+  padding: 24px 38px;
+  border-radius: 10px;
+  background-color: #70908B;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 120px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.popular-svg-arrow path {
+  fill: white;
+}
+
 .popular-title {
   text-align: center;
 }
