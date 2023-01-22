@@ -5,7 +5,7 @@ $mainbg: '#ffffff';
 // Element-colors: 
 $leftarrowbg: '#E0EFF6';
 $rightarrowbg: '#F9D9DA';
-$benefitsbg: '#E0EFF6';
+$benefitsbg: '#E0EFF6 ';
 $btnlightgreen: '#70908B';
 
 /* GENERAL */
@@ -45,6 +45,14 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section-title {
+  font-family: "Playfair-Display", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  color: $maingreen;
 }
 
 /* CONTAINER */
