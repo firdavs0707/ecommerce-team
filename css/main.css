@@ -388,4 +388,138 @@ img {
   .icons {
     width: 100px;
   }
-}/*# sourceMappingURL=main.css.map */
+
+}
+.out-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.output {
+  max-width: 1130px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.overlay {
+  height: 321px;
+  border-radius: 30px;
+}
+
+.input {
+  padding: 26px 32px;
+  gap: 18px;
+  font-size: 30px;
+  width: 349px;
+  height: 75px;
+  padding-left: 50px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.variants {
+  height: 831px;
+  overflow-y: auto;
+}
+
+.variants > h3 {
+  margin: 65px auto;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #07484a;
+}
+
+.variants > h3:hover {
+  cursor: pointer;
+}
+
+.btn-cat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 20px;
+  gap: 18px;
+  width: 265px;
+  height: 89px;
+  background: #70908B;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.btn-cat:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1530px) {
+  .out-wrapper {
+    flex-direction: column;
+  }
+  .sidebar {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .variants {
+    display: flex;
+    gap: 50px;
+    max-width: 600px;
+    width: 100%;
+    height: 200px;
+  }
+  .input {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .btn-cat {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .OUT {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .variants > h3 {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+.med {
+  height: 304px;
+}
+
+@media screen and (max-width: 1143px) {
+  .output {
+    max-width: 450px;
+    width: 100%;
+  }
+  .med {
+    height: 205px;
+  }
+  .overlay {
+    height: 100%;
+    border-radius: 30px;
+  }
+  .sidebar {
+    margin: 0px;
+  }
+}
+
+
